@@ -5,19 +5,19 @@ def gamewin(comp , you):
     if comp == you :
         return None
  
- # Check for possibilities when computer chose 's ':
+ # Checking for possibilities when computer chose 's ':
     elif comp == 's':
         if you == 'p':
             return True
         elif you =='sc':
             return False
-# Check for possibilities when computer chose 'p' :          
+# Checking for possibilities when computer chose 'p' :          
     elif comp =='p':
         if you == 'sc':
             return True
         elif you == 's':
             return False
-# Check for possibilities when computer chose 'sc' :           
+# Checking for possibilities when computer chose 'sc' :           
     elif comp == 'sc':
         if you == 's':
             return True
