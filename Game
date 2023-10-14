@@ -1,6 +1,5 @@
 import random
 
-# Stone Paper or Scissor Game :
 def gamewin(comp , you):
 # If two values are equal , declare a tie .
     if comp == you :
@@ -57,29 +56,3 @@ else :
       !!!  finished !!!
     
 
-# Two players Game : 
-def gamewin(p1 , p2):
-    if p1 == p2 :
-        print("\tGame tie !!")
-    elif p1 == 's':
-        if p2 == 'p':
-            print("\tp2 wins")
-        elif p2 =='sc':
-            print("\tp1 wins")
-            
-    elif p1 =='p':
-        if p2 == 'sc':
-            print("\tp2 wins")
-        elif p2 == 's':
-            print("\tp1 wins")
-            
-    elif p1 == 'sc':
-        if p2 == 's':
-            print("\tp2 wins")
-        elif p2 =='p':
-            print("\tp1 wins")
-        
-p1 = input("p1 turn : Stone(s) , Paper (p) or Scissor(sc) : ")
-p2 = input("p2 turn : Stone(s) , Paper (p) or Scissor(sc) : ")
-
-gamewin(p1 , p2)
